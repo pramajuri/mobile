@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SewaMatic">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:paddingBottom="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/iddata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Identitas Penyewa"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iddata"
+                        android:layout_marginTop="20dp"
+                        android:text="Nama Penyewa"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/textNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView10"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textNama"
+                        android:layout_marginTop="10dp"
+                        android:text="Alamat Penyewa"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/textAlamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView12"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textAlamat"
+                        android:layout_marginTop="10dp"
+                        android:text="No. Telp"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/textTelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView13"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/rdmatic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView14"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdWeekend"
+                            android:layout_width="168dp"
+                            android:layout_height="wrap_content"
+                            android:text="Weekend (25%)" />
+
+                        <RadioButton
+                            android:id="@+id/rdWeekday"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:text="Weekday (10%)" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/idmatic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Data Matic"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idmatic"
+                        android:layout_marginTop="20dp"
+                        android:text="Merk Matic"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/spnMerk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spnMerk"
+                        android:layout_marginTop="10dp"
+                        android:text="Promo"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rdmatic"
+                        android:layout_marginTop="10dp"
+                        android:text="Lama Sewa"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/textLama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView15"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSelesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:text="Selesai" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
