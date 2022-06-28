@@ -86,7 +86,7 @@ public class DaftarPenyewa extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int item) {
                         switch (item) {
                             case 0: {
-                                Intent i = new Intent(DaftarPenyewa.this, DaftarMatic.class);
+                                Intent i = new Intent(DaftarPenyewa.this, DetailPenyewa.class);
                                 i.putExtra("nama", selection);
                                 startActivity(i);
                                 break;

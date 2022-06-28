@@ -23,6 +23,7 @@
         <activity android:name=".DetailMatic" />
         <activity android:name=".DaftarPenyewa" />
         <activity android:name=".SewaMatic" />
+        <activity android:name=".DetailPenyewa" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
